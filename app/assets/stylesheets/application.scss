@@ -14,3 +14,19 @@
  */
 
 @import "bootstrap";
+
+body {
+  background-image: url("hotel.jpg");
+  background-size: cover;
+}
+
+#banner {
+  margin-top: 15px;
+  height: 15%;
+  width: auto;
+}
+
+div.banner {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.35);
+}
