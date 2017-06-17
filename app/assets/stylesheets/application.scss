@@ -15,12 +15,20 @@
 
 @import "bootstrap";
 
+html {
+  font-family: lato;
+}
+
 body {
   background-image: url("hotel.jpg");
   background-size: cover;
 }
 
-div.row.banner {
+h1 {
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+div.row {
   text-align: center;
   background: rgba(255, 255, 255, 0.35);
 }
@@ -30,7 +38,7 @@ div.row.banner {
     // height: 15%;  
 }
 
-span.current-time {
+span.current-time, span.alarm-time {
   font-size: 90px;
   font-family: 'digi';
   color: #e73a52;
@@ -49,4 +57,5 @@ span.current-time {
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 25px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+  margin-bottom: 15px;
 }
