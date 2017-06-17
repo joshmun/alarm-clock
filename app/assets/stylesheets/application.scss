@@ -30,3 +30,15 @@ div.banner {
   text-align: center;
   background: rgba(255, 255, 255, 0.35);
 }
+
+span.current-time {
+  font-size: 90px;
+  font-family: 'digi';
+  color: #e73a52;
+  text-shadow: 0 0 20px rgba(230, 58, 82, 0.8);
+}
+
+@font-face {
+  font-family: 'digi';
+  src: url('DS-DIGII.TTF')
+}

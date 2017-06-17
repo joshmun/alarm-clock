@@ -1,9 +1,9 @@
 <div class="container">
   <div class="row banner">
     <div class="col-lg-12">
-      <%= image_tag("alarm-logo.png", id: "banner") do %>
-      <% end %>
-      <div class="current-time">
+      <%= image_tag("alarm-logo.png", id: "banner") %>
+      <div class="clock">
+        <span class="current-time"><%= @t.hour %> : <%= @t.min %> : <%= @t.sec %></span>
       </div>
     </div>
   </div>

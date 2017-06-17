@@ -1,11 +1,10 @@
 $( document ).ready(function() {
-  // setInterval(refreshTime, 1000);
-  refreshTime();
+  setInterval(refreshTime, 1000);
 });
 
 function refreshTime() {
   $.ajax({
-    url: "/alarm",
+    url: "/alarm/time",
     success: function(updatedTime){
       $('.current-time').html(updatedTime);
     }
