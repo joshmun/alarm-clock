@@ -48,6 +48,7 @@ $( document ).ready(function() {
       if (!$(e.target).is('button')) {
         $('#overlay').fadeOut(500, function() {
             this.remove(); 
+            $('input').val("");
          });
       };
     })
