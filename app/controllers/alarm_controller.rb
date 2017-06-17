@@ -25,8 +25,8 @@ class AlarmController < ApplicationController
   end
 
   def self.wakeup_call(phonenumber)
-    account_sid = 'AC466416da1b1384010b65078872e348df'
-    auth_token = '90c5a85b3709194cf54f1d89c87df8ad'
+    account_sid = ENV["ACCOUNT_SID"]
+    auth_token = ENV["AUTH_TOKEN"]
     @client = Twilio::REST::Client.new account_sid, auth_token
 
     @call = @client.account.calls.create(
