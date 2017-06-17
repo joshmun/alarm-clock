@@ -1,1 +1,9 @@
-<%= @t.hour %> : <%= @t.min %> : <%= @t.sec %>
+<% if @t.hour > 12 %>
+  <% t = @t.hour - 12 %>
+  <% period = "PM" %>
+<% else %>
+  <% t = @t.hour %>
+  <% period = "AM" %>
+<% end %>
+
+<%= t %> : <%= @t.min %> : <%= @t.sec %> <%= period %>

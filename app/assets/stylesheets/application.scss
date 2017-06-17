@@ -20,25 +20,33 @@ body {
   background-size: cover;
 }
 
-#banner {
-  margin-top: 15px;
-  height: 15%;
-  width: auto;
-}
-
-div.banner {
+div.row.banner {
   text-align: center;
   background: rgba(255, 255, 255, 0.35);
+}
+
+#logo {
+    margin-top: 30px;
+    // height: 15%;  
 }
 
 span.current-time {
   font-size: 90px;
   font-family: 'digi';
   color: #e73a52;
-  text-shadow: 0 0 20px rgba(230, 58, 82, 0.8);
+  text-shadow: 0 0 20px rgba(230, 58, 82, 0.6);
 }
 
 @font-face {
   font-family: 'digi';
   src: url('DS-DIGII.TTF')
+}
+
+.clock {
+  text-align: center;
+  width: 500px;
+  height: 140px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
 }
