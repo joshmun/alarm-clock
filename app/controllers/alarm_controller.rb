@@ -6,8 +6,9 @@ class AlarmController < ApplicationController
   def show
     @t = Time.now
     respond_to do |format|
-      format.js {}
+      format.js { }
     end
-    render partial: 'time', layout: false
+
+  render partial: 'time', :layout => false
   end
 end
