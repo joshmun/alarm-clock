@@ -14,6 +14,8 @@
       <span class="current-time"></span>
     </div>
   </div>
+
+  <div id="alarm">
   <div class="row justify-content-md-center">
     <h1>ALARM TIME</h1>
   </div>
@@ -22,8 +24,10 @@
       <span class="alarm-time"><%= time_field(:alarm, :time) %></span>
     </div>  
   </div>
+  </div>
 
   <!-- Phone Number & Twilio API -->
+  <div id="phone">
   <div class="row justify-content-md-center">
     <h1>PHONE NUMBER</h1>
   </div>
@@ -31,6 +35,7 @@
     <div class="clock">
       <span class="alarm-time"><input type="text" role="number" placeholder="555-555-5555" id="user_phone" maxlength="12"></span>
     </div>  
+  </div>
   </div>
 
   <div class="row justify-content-md-center">

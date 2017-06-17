@@ -33,7 +33,13 @@ $( document ).ready(function() {
       success: function(result){
         if (!$('#overlay').length) {
           $('<div id="overlay"> </div>').hide().appendTo('body').fadeIn(1000);
-          $('#overlay').html(result);
+          var alarm
+          var phone
+          alarm = $('#alarm').clone()
+          phone = $('#phone').clone()
+          $('#overlay').append(alarm)
+          $('#overlay').append(phone)
+          $('#overlay').css("padding-top", "100px");
         }
       }
     })
