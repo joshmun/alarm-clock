@@ -36,10 +36,6 @@ class AlarmController < ApplicationController
       )
     puts @call.start_time
   end
-  # def perform_call(phonenumber, alarm_time)
-  #   wakeup_call(phonenumber).delay({run_at: alarm_time})
-  # end
-
 
   private
 

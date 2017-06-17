@@ -33,6 +33,7 @@ $( document ).ready(function() {
       success: function(result){
         if (!$('#overlay').length) {
           $('<div id="overlay"> </div>').hide().appendTo('body').fadeIn(1000);
+          $('#overlay').html(result);
         }
       }
     })
