@@ -26,6 +26,7 @@ gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
 gem 'delayed_job_active_record'
 gem 'twilio-ruby'
 gem 'activesupport'
+gem 'daemons'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

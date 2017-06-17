@@ -88,3 +88,15 @@ span.current-time, span.alarm-time {
   margin-top: 15px;
   margin-bottom: 30px;
 }
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("night.jpg");
+    background-size: cover;
+    z-index: 10000;
+    display: block;
+}

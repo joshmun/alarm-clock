@@ -1,5 +1,9 @@
-<% if @t.hour > 12 %>
-  <% t = @t.hour - 12 %>
+<% if @t.hour >= 12 %>
+  <% if @t.hour == 12 %>
+    <% t = @t.hour %>
+  <% else %>  
+    <% t = @t.hour - 12 %>
+  <% end %>
   <% period = "PM" %>
 <% else %>
   <% t = @t.hour %>
