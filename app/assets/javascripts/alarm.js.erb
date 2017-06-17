@@ -1,5 +1,41 @@
 $( document ).ready(function() {
   setInterval(refreshTime, 1000);
+
+  $('input').keyup(function() {
+    var empty = false;
+    $('input').each(function() {
+      if (!$(this).val()) {
+          empty = true;
+      }
+    });
+    
+    if (empty) {
+        $('#set-alarm').attr('disabled', 'disabled');
+    } 
+    else {
+        $('#set-alarm').removeAttr('disabled');
+    }
+  })
+
+  $('button').click(function(event){
+    var userData = [];
+    if(!$('button').attr('disabled')){
+      $('input').each(function(){
+        userData.push($(this).val());
+      });
+
+    $.ajax({
+      url: "/alarm",
+      type: "post",
+      data: JSON.stringify(userData),
+      contentType: 'application/json; charset=utf-8',
+      dataType: 'json',
+      success: function(result){
+        console.log(result);
+      }
+    })
+    }
+  })
 });
 
 function refreshTime() {

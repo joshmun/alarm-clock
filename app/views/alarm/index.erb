@@ -1,14 +1,39 @@
 <div class="container">
-  <div class="row justify-content-md-center banner">
+  <div class="row justify-content-md-center">
     <div class="col-12">
       <%= image_tag("alarm-logo.png", id: "logo") %>
     </div>
+  </div>
+  <div class="row justify-content-md-center">
+    <div>
+      <h1>CURRENT TIME</h1>
+    </div>
+  </div>
+  <div class="row justify-content-md-center">
     <div class="clock">
       <span class="current-time"></span>
     </div>
-    <div class="clock-shadow">
-    </div>
   </div>
-  <div class="row ">
+  <div class="row justify-content-md-center">
+    <h1>ALARM TIME</h1>
+  </div>
+  <div class="row justify-content-md-center">
+    <div class="clock">
+      <span class="alarm-time"><%= time_field(:alarm, :time) %></span>
+    </div>  
+  </div>
+
+  <!-- Phone Number & Twilio API -->
+  <div class="row justify-content-md-center">
+    <h1>PHONE NUMBER</h1>
+  </div>
+  <div class="row justify-content-md-center">
+    <div class="clock">
+      <span class="alarm-time"><input type="text" role="number" placeholder="555-555-5555" id="user_phone" maxlength="12"></span>
+    </div>  
+  </div>
+
+  <div class="row justify-content-md-center">
+    <button type="button" class="btn btn-outline-success btn-lg" id="set-alarm" disabled>SET ALARM</button>
   </div>
 </div>
